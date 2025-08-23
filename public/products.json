@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "Wireless Headphones",
+    "description": "High-quality Bluetooth headphones with noise cancellation and 20 hours battery life.",
+    "price": 299,
+    "image": "https://ibb.co.com/xKmbCsYF",
+    "category": "Electronics",
+    "feature": ["Bluetooth 5.0", "Noise Cancellation", "20 Hours Battery"]
+  },
+  {
+    "id": 2,
+    "name": "Smart Watch",
+    "description": "Water-resistant smart watch with heart rate monitor, step tracker, and notification alerts.",
+    "price": 399,
+    "image": "https://ibb.co.com/kgKdP2HJ",
+    "category": "Electronics",
+    "feature": ["Heart Rate Monitor", "Step Tracker", "Water Resistant"]
+  },
+  {
+    "id": 3,
+    "name": "Organic Honey",
+    "description": "Pure organic honey sourced from natural bee farms, rich in antioxidants.",
+    "price": 149,
+    "image": "https://ibb.co.com/cSdJCDpD",
+    "category": "Food",
+    "feature": ["100% Organic", "No Added Sugar", "Rich in Antioxidants"]
+  },
+  {
+    "id": 4,
+    "name": "Dark Chocolate",
+    "description": "Premium dark chocolate with 70% cocoa, healthy and rich in flavor.",
+    "price": 99,
+    "image": "https://ibb.co.com/V7znt7B",
+    "category": "Food",
+    "feature": ["70% Cocoa", "Gluten-Free", "Rich Flavor"]
+  }
+]
