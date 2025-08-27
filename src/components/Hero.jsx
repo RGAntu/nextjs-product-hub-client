@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <section className="hero min-h-[60vh] bg-amin">
+    <section className="hero min-h-[60vh]">
       <div className="hero-content text-center">
         <div className="max-w-xl">
           <h1 className="text-5xl font-bold">Welcome to Product Hub</h1>
