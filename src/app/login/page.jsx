@@ -15,7 +15,7 @@ export default function LoginPage() {
       email: form.email,
       password: form.password,
       redirect: true,
-      callbackUrl: "/product", // explicit redirect after login
+      callbackUrl: "/", // explicit redirect after login
     });
     setLoading(false);
   };
