@@ -44,7 +44,7 @@ export default function AddProductPage() {
       <h2 className="text-2xl font-bold mb-4">Add New Product</h2>
       <form
         onSubmit={handleSubmit}
-        className="space-y-4 p-6 border rounded-lg shadow bg-white"
+        className="space-y-4 p-6 border rounded-lg shadow bg-base-200"
       >
         <input
           type="text"

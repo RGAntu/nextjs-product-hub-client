@@ -12,6 +12,11 @@ export default function Navbar() {
             <li>
                 <Link href={"/product"}>Product</Link>
             </li>
+            <li>
+              <Link href="/dashboard/add-product">
+          Add Product
+        </Link>
+            </li>
             </>
         )
     }

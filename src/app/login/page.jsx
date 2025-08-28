@@ -3,21 +3,31 @@
 import { signIn } from "next-auth/react";
 import { useState } from "react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 export default function LoginPage() {
   const [loading, setLoading] = useState(false);
   const [form, setForm] = useState({ email: "", password: "" });
+  const router = useRouter();
 
   const onSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
-    await signIn("credentials", {
+
+    const res = await signIn("credentials", {
+      redirect: false, // important: handle redirect manually
       email: form.email,
       password: form.password,
-      redirect: true,
-      callbackUrl: "/", // explicit redirect after login
     });
+
     setLoading(false);
+
+    if (res?.ok) {
+      // successful login → redirect
+      router.push("/products");
+    } else {
+      alert("Invalid email or password");
+    }
   };
 
   return (
@@ -25,8 +35,6 @@ export default function LoginPage() {
       <div className="card w-full max-w-md bg-base-100 shadow-xl">
         <h1 className="text-4xl card-title justify-center">Login</h1>
         <div className="card-body">
-          
-
           <form onSubmit={onSubmit} className="space-y-3">
             <input
               type="email"
