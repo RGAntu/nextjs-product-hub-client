@@ -1,10 +1,9 @@
 import dbConnect, { collectionNameObj } from "@/lib/dbConnect";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
 
 export default async function ProductSection() {
-  const productsCollection = dbConnect(collectionNameObj.productsCollection);
+  const productsCollection = await dbConnect(collectionNameObj.productsCollection);
   const data = await productsCollection.find({}).toArray();
 
   return (

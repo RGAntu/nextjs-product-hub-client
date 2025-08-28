@@ -5,7 +5,10 @@ import { ObjectId } from "mongodb";
 export default async function ProductDetails({ params }) {
   const { id } = params; 
 
-  const productsCollection = dbConnect(collectionNameObj.productsCollection);
+  // Connect to MongoDB
+  const productsCollection = await dbConnect(collectionNameObj.productsCollection);
+
+  // Fetch single product
   const product = await productsCollection.findOne({ _id: new ObjectId(id) });
 
   if (!product) {

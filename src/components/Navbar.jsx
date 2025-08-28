@@ -10,7 +10,7 @@ export default function Navbar() {
                 <Link href={"/"}>Home</Link>
             </li>
             <li>
-                <Link href={"/products"}>Products</Link>
+                <Link href={"/product"}>Product</Link>
             </li>
             </>
         )
@@ -30,7 +30,7 @@ export default function Navbar() {
         }
       </ul>
     </div>
-    <Link href={"/"} className=" text-xl">ProductHub</Link>
+    <Link href={"/"} className=" text-2xl font-bold">Product<span className='text-primary'>Hub</span></Link>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
@@ -40,7 +40,7 @@ export default function Navbar() {
     </ul>
   </div>
   <div className="navbar-end">
-    <a className="btn">Login</a>
+    <Link href="/login" className="btn btn-primary">Login</Link>
   </div>
 </div>
   )
